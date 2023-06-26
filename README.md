@@ -1,6 +1,8 @@
 # Drug-Discovery-Machine-learning-and-data-analysis
-Using Python and machine learning to build a bioinfomatics project for drug discovery (Data from ChEMBL Database)
-
+Un projet de bio-informatique pour la découverte de médicaments (Données de la base de données ChEMBL) en utilisant: Python et l'apprentissage automatique pour construire un modèle.
 
 # Terms Definition
-Drug : A drug is a biological or chemical entity that cea modulate the course of a disease state by interacting with it's target protein.
+Médicament : un médicament est une entité biologique ou chimique qui peut moduler l'évolution d'une maladie en interagissant avec sa protéine cible.
+*Les enzymes sont des protéines (ou parfois des acides ribonucléiques) dont le rôle est de catalyser les réactions chimiques du vivant.
+* Entité biologique: les anticorps.
+* Entité chimique:petites molécules.
