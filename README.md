@@ -8,3 +8,6 @@ Médicament : un médicament est une entité biologique ou chimique qui peut mod
 *Entité chimique:petites molécules.      
 Hits : les séquences identifiées, se sont les séquences qui sont similaires ou identiques aux requêtes du dépistage cellulaire haut débit.  
 Leads : sont des composés qui ont fait l'objet d'optimisations structurelles mineures à partir de hits. À partir de là, Ils sont souvent soumises à d'autres séries d'optimisations.  
+
+
+Source : https://github.com/dataprofessor/code
