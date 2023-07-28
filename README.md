@@ -15,6 +15,8 @@ La règle de cinq de Lipinski est un concept fréquemment utilisé dans la déco
 Selon la règle de cinq de Lipinski, un médicament actif par voie orale ne peut avoir plus d'une violation de ces conditions.
 Source : https://dev.drugbank.com/guides/terms/lipinski-s-rule-of-five
 
+### Part 3 :
+
 
 # Terms Definition
 * L'acétylcholine est un messager chimique qui transmet des signaux entre les nerfs et les muscles. Une enzyme appelée acétylcholinestérase décompose l'acétylcholine. Certains médicaments utilisés pour traiter la myasthénie grave agissent sur l'acétylcholinestérase pour arrêter la dégradation de l'acétylcholine.
