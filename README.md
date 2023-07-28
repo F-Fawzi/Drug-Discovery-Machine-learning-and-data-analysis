@@ -16,7 +16,7 @@ Selon la règle de cinq de Lipinski, un médicament actif par voie orale ne peut
 Source : https://dev.drugbank.com/guides/terms/lipinski-s-rule-of-five
 
 ### Part 3 :
-
+Dans la troisième partie, on va calculer les discripteurs molèculaire et les empreintes digitales. 
 
 # Terms Definition
 * L'acétylcholine est un messager chimique qui transmet des signaux entre les nerfs et les muscles. Une enzyme appelée acétylcholinestérase décompose l'acétylcholine. Certains médicaments utilisés pour traiter la myasthénie grave agissent sur l'acétylcholinestérase pour arrêter la dégradation de l'acétylcholine.
@@ -32,9 +32,10 @@ Un test non paramétrique est un test d'hypothèse qui n'exige pas que la distri
 L'hypothèse nulle (H0) est que les deux populations sont égales.  
 L'hypothèse alternative (H1) est que les deux populations ne sont pas égales.
 
-#Bibliothèques python :  
-*RDKIT : RDKit est une bibliothèque open-source pour cheminformatics. Rdkit package ne prend en charge que l'installation conda. La majorité des fonctionnalités chimiques «de base» (par exemple, lecture / écriture de molécules, recherche de sous-structures, nettoyage moléculaire, etc.) se trouvent dans le rdkit.Chemmodule. Les fonctionnalités plus avancées ou moins fréquemment utilisées se trouvent dans rdkit.Chem.AllChem. pour plus d'informations veuillez voir ce site  (https://xinhaoli74.github.io/blog/rdkit/2021/01/06/rdkit.html).
-
+# Bibliothèques python :  
+* RDKIT : RDKit est une bibliothèque open-source pour cheminformatics. Rdkit package ne prend en charge que l'installation conda. La majorité des fonctionnalités chimiques «de base» (par exemple, lecture / écriture de molécules, recherche de sous-structures, nettoyage moléculaire, etc.) se trouvent dans le rdkit.Chemmodule. Les fonctionnalités plus avancées ou moins fréquemment utilisées se trouvent dans rdkit.Chem.AllChem. pour plus d'informations veuillez voir ce site  (https://xinhaoli74.github.io/blog/rdkit/2021/01/06/rdkit.html).  
+* PaDEL-Descriptor est un logiciel de calcul de descripteurs moléculaires et d'empreintes digitales. Le logiciel calcule actuellement 797 descripteurs (663 descripteurs 1D, 2D et 134 descripteurs 3D) et 10 types d'empreintes digitales. Ces descripteurs et empreintes digitales sont calculés principalement à l'aide de The Chemistry Development Kit. Certains descripteurs et empreintes digitales supplémentaires ont été ajoutés, notamment des descripteurs d'état électrotopologique de type atome, le volume de McGowan, des descripteurs de relation d'énergie libre linéaire moléculaire, le nombre d'anneaux, le nombre de sous-structures chimiques identifiées par Laggner, et les empreintes digitales binaires et le nombre de sous-structures chimiques identifiées par Klekota et Roth.  
+Source : https://onlinelibrary.wiley.com/doi/full/10.1002/jcc.21707?scrollTo=references
 
 
 Source : https://github.com/dataprofessor/code
