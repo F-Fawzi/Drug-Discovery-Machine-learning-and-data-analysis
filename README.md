@@ -1,8 +1,8 @@
 # Drug-Discovery-Machine-learning-and-data-analysis
-Un projet de bio-informatique pour la découverte de médicaments (Données de la base de données ChEMBL) en utilisant: Python et l'apprentissage automatique pour construire un modèle. Le target protein est : L'acétylcholine.
+Un projet de bio-informatique pour la découverte de médicaments (Données de la base de données ChEMBL) en utilisant: Python et l'apprentissage automatique pour construire un modèle. 
 
-### Part 1 :  
-
+### Part 1 :    
+Collecte des données originales en biologie depuis la base de données ChEMBL et prétraitement de ces données d'activité biologique. L'ensemble de données est composé de molécules qui ont été testés biologiquement pour leur activité sur l'organisme cible/la protéine d'intérêt, dans notre cas : acetylcholinesterase.  
 
 ### Part 2 :  
 * Chargement des données preprocess   
@@ -18,15 +18,18 @@ Source : https://dev.drugbank.com/guides/terms/lipinski-s-rule-of-five
 ### Part 3 :
 * Calcule des discripteurs molèculaire et des empreintes digitales.
 
-### Part 4 :  
-
+### Part 4 :    
+* Création d'un modèle de régression pour prédire les valeurs pIC50 (la variable Y).  
 * VarianceThreshold: Feature Selection : le seuil de variance est un sélecteur d'entités qui supprime toutes les entités à faible variance de l'ensemble de données qui ne sont pas d'une grande utilité dans la modélisation.  
 Il ne regarde que les caractéristiques (x), pas les sorties souhaitées (y), et peut donc être utilisé pour un apprentissage non supervisé.  
 La valeur par défaut du seuil est 0 :  
 Si seuil de variance = 0 (supprimer les caractéristiques constantes)  
 Si seuil de variance > 0 (supprimer les fonctionnalités quasi-constantes)    
 (Source : https://medium.com/nerd-for-tech/removing-constant-variables-feature-selection-463e2d6a30d9)
-  
+
+### Part 5 :  
+Comparaison de plusieurs modèles de régression (relation quantitative structure-activité ou QSAR) des inhibiteurs de l'acétylcholinestérase en utilisant la bibliothèque lazypredict en Python.    
+
 # Terms Definition
 * L'acétylcholine est un messager chimique qui transmet des signaux entre les nerfs et les muscles. Une enzyme appelée acétylcholinestérase décompose l'acétylcholine. Certains médicaments utilisés pour traiter la myasthénie grave agissent sur l'acétylcholinestérase pour arrêter la dégradation de l'acétylcholine.
 * Médicament : un médicament est une entité biologique ou chimique qui peut moduler l'évolution d'une maladie en interagissant avec sa protéine cible.  
@@ -45,7 +48,9 @@ L'hypothèse alternative (H1) est que les deux populations ne sont pas égales.
 # Bibliothèques python :  
 * RDKIT : RDKit est une bibliothèque open-source pour cheminformatics. Rdkit package ne prend en charge que l'installation conda. La majorité des fonctionnalités chimiques «de base» (par exemple, lecture / écriture de molécules, recherche de sous-structures, nettoyage moléculaire, etc.) se trouvent dans le rdkit.Chemmodule. Les fonctionnalités plus avancées ou moins fréquemment utilisées se trouvent dans rdkit.Chem.AllChem. pour plus d'informations veuillez voir ce site  (https://xinhaoli74.github.io/blog/rdkit/2021/01/06/rdkit.html).  
 * PaDEL-Descriptor est un logiciel de calcul de descripteurs moléculaires et d'empreintes digitales. Le logiciel calcule actuellement 797 descripteurs (663 descripteurs 1D, 2D et 134 descripteurs 3D) et 10 types d'empreintes digitales. Ces descripteurs et empreintes digitales sont calculés principalement à l'aide de The Chemistry Development Kit. Certains descripteurs et empreintes digitales supplémentaires ont été ajoutés, notamment des descripteurs d'état électrotopologique de type atome, le volume de McGowan, des descripteurs de relation d'énergie libre linéaire moléculaire, le nombre d'anneaux, le nombre de sous-structures chimiques identifiées par Laggner, et les empreintes digitales binaires et le nombre de sous-structures chimiques identifiées par Klekota et Roth.  
-Source : https://onlinelibrary.wiley.com/doi/full/10.1002/jcc.21707?scrollTo=references
+Source : https://onlinelibrary.wiley.com/doi/full/10.1002/jcc.21707?scrollTo=references.
+
+* Lazy Predict : Lazypredict est un package Python qui vise à automatiser le processus de modélisation de l'apprentissage automatique. . lazypredict prend en charge à la fois les problèmes de classification et de régression. Sa principale caractéristique est sa capacité à automatiser la formation et l'évaluation des modèles d'apprentissage automatique. Il fournit une interface simple pour définir une gamme d'hyperparamètres, puis forme et évalue un modèle en utilisant une variété de combinaisons différentes de ces hyperparamètres.  
 
 
 
